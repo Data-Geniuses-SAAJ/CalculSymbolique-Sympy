@@ -11,7 +11,7 @@
 | Date | Tâches prévues | Tâches réalisées | Difficultés rencontrées | Solutions  |
 | ---- | -------------- | ---------------- | ----------------------- | ----------------------------- |
 |  01-10-25    | Recherches Personnelles, collaboration en équipe dans le groupe Whatsapp                |   Recherches personnelles, Réalisation d'un mini rapport avec latex beamer sur Overleaf, collaboration en équipe dans le groupe Whatsapp              |    erreur de syntaxe latex, car je maitrise très peu le langage                    |    Utilisation de Chatgpt, de la documentation Overleaf                          |
-|  02-10-25    | Deploiement du Travail sur Github               |  Deploiement du Travail sur Github               |   Problème de Connexion Internet                       |  Obtention d'une connexion plus fluide                           |
+|  02-10-25    | Déploiement du Travail sur Github, rédaction de mon fichier de suivi projet              |  Déploiement du Travail sur Github, rédaction de mon fichier de suivi projet                  |   Problème de Connexion Internet                       |  Obtention d'une connexion plus fluide                           |
 
 ## 3. Réflexion personnelle
 
