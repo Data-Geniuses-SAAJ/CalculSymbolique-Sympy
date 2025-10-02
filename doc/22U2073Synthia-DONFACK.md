@@ -46,26 +46,60 @@
 
 .
 
-## 📅 Mise à jour du 02 Octobre 2025 : Entropie Croisée Binaire (BCE)
+# 🎓 INF4127: Optimisation II - Travaux Pratiques n°1 (TPE n°1)
 
-L'étude de la fonction de Perte d'**Entropie Croisée Binaire** (Binary Cross-Entropy ou Log Loss) a été complétée, combinant l'approche symbolique (SymPy) et l'application pratique (NumPy/Matplotlib).
+Ce dépôt contient le travail pratique (TPE n°1) du cours d'Optimisation II, concernant l'analyse des propriétés fondamentales de différentes fonctions de perte.
 
-### 🎯 Objectifs Couverts (Exercice 1, BCE)
+[cite_start]Le travail, initialement l'Exercice 1 de la Fiche de TPE n°1[cite: 3], a été divisé entre les étudiants pour optimiser le temps de réalisation (contrainte fixée à moins de 10 heures). Mon rôle était de prendre en charge l'analyse complète de la fonction de **Perte d'Entropie Croisée Binaire (BCE)**.
 
-| Objectif | Réalisé | Détails |
-| :--- | :--- | :--- |
-| **Gradient** | ✅ | [cite_start]Expression analytique du gradient fournie[cite: 5]. |
-| **Convexité** | ✅ | [cite_start]Propriété de stricte convexité démontrée via la Hessienne[cite: 6]. |
-| **Courbes** | ✅ | [cite_start]Représentation de la surface de perte 3D et des courbes de niveau ("ellipses") sur le dataset Iris[cite: 9]. |
-| **Tangente** | ✅ | [cite_start]Équation de la tangente à la courbe de niveau trouvée au point $P(0.8, -0.3)$[cite: 10]. |
-
-### 🔍 Synthèse des Résultats Clés
-* **Gradient ($\partial L / \partial \hat{y}$)** : $\frac{\hat{y} - y}{\hat{y}(1 - \hat{y})}$
-* **Convexité** : **Strictement Convexe**, car la Hessienne ($\frac{\partial^2 L}{\partial \hat{y}^2}$) est strictement positive.
+Le code d'analyse complet se trouve dans le notebook `TP_INF4127_BCE.ipynb`.
 
 ---
-## 🚧 Autres Fonctions de Perte (Planification)
-* Erreur Quadratique Moyenne (MSE)
-* Entropie Croisée Catégorielle
-* Perte de Huber
 
+## I. Analyse de l'Entropie Croisée Binaire (BCE)
+
+L'Entropie Croisée Binaire (Binary Cross-Entropy ou Log Loss) est la fonction de perte standard pour les problèmes de classification binaire.
+
+### 1. Expressions du Gradient (Question 1)
+
+[cite_start]Utilisation du calcul symbolique (`sympy`) pour déterminer l'expression du gradient $\nabla L$ par rapport à la prédiction $\hat{y}$. [cite: 5]
+
+La fonction de perte pour une observation est :
+$$
+L(y, \hat{y}) = -[y \log(\hat{y}) + (1-y) \log(1-\hat{y})]
+$$
+
+L'expression du gradient est :
+$$
+\frac{\partial L}{\partial \hat{y}} = \frac{\hat{y} - y}{\hat{y}(1 - \hat{y})}
+$$
+
+### 2. Étude de la Convexité (Question 2)
+
+[cite_start]L'étude de la convexité repose sur le calcul de la dérivée seconde (la Hessienne) par rapport à $\hat{y}$. [cite: 6]
+
+L'expression de la Hessienne est :
+$$
+\frac{\partial^2 L}{\partial \hat{y}^2} = \frac{y}{\hat{y}^2} + \frac{1 - y}{(1 - \hat{y})^2}
+$$
+
+**Conclusion :** Puisque $\hat{y} \in (0, 1)$ et $y \in \{0, 1\}$, le terme $\frac{\partial^2 L}{\partial \hat{y}^2}$ est **strictement positif** ($\gt 0$). La fonction de perte BCE est donc **Strictement Convexe**, ce qui garantit l'existence d'un unique minimum global lors de l'optimisation.
+
+### 3. Application Pratique et Visualisations (Question 3a)
+
+[cite_start]Un jeu de données de classification binaire, le dataset **Iris (Classes 0 et 1)**[cite: 7], a été utilisé pour modéliser une fonction de perte $L(w_1, w_2)$ basée sur un modèle de Régression Logistique.
+
+[cite_start]Les visualisations (Courbes 3D et Courbes de Niveau) ont confirmé l'aspect convexe de la surface de perte dans l'espace des paramètres $(\mathbf{w})$. [cite: 9]
+
+### 4. Équation de la Tangente à l'Ellipse (Question 3b)
+
+[cite_start]L'équation de la tangente à la courbe de niveau (l'ellipse) au point $P(w_1^P, w_2^P) = (0.8, -0.3)$ a été calculée en utilisant la propriété que la tangente est perpendiculaire au vecteur gradient $\nabla L(P)$. [cite: 10]
+
+Le vecteur gradient au point $P$ est calculé numériquement : $\nabla L(P) = (g_1, g_2)$.
+
+L'équation de la tangente est donnée par :
+$$
+g_1 \cdot (w_1 - w_1^P) + g_2 \cdot (w_2 - w_2^P) = 0
+$$
+
+Le notebook inclut le calcul exact des valeurs $g_1$ et $g_2$ et l'équation finale sous forme $w_2 = a \cdot w_1 + b$, ainsi que la visualisation graphique de cette tangente.
