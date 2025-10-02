@@ -34,8 +34,10 @@
 
 ### Améliorations possibles :
 - Ajouter des animations ou des transitions dans les slides pour plus d'interactivité
+- maitrise approfondie de sympy
 
 ## 5. Validation
 
 - **Signature / Nom de l'étudiant :** DONFACK Synthia Calorine
 - **Date de validation :** 02/10/2025
+
