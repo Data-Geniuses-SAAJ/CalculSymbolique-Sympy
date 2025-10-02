@@ -4,14 +4,14 @@
 
 * **Nom et prénom : BOKOU-BOUNA-ANGE-LARISSA**
 * **Matricule : 22W2188**
-* **Rôle dans le projet : Recherche/Coordinateur/Documentaliste(Github)/Testeur/Relecteur**
+* **Rôle dans le projet : Recherche / Coordinateur / Documentaliste(Github) / Testeur / Relecteur**
 
 ## 2. Suivi hebdomadaire / par séance
 
-| Date | Tâches prévues | Tâches réalisées | Difficultés rencontrées | Solutions / Prochaines étapes |
+| Date | Tâches prévues | Tâches réalisées | Difficultés rencontrées | Solutions  |
 | ---- | -------------- | ---------------- | ----------------------- | ----------------------------- |
-|      |                |                  |                         |                               |
-|      |                |                  |                         |                               |
+|  01-10-25    | Recherches Personnelles               |   Recherches personnelles, Réalisation d'un mini rapport avec latex beamer               |    erreur de syntaxe latex                     |                               |
+|  02-10-25    |                |                  |                         |                               |
 
 ## 3. Réflexion personnelle
 
