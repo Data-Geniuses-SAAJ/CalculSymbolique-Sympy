@@ -1,3 +1,4 @@
+# INF4127: Optimisation II - Travaux Pratiques
 # Cahier de suivi de projet – Membre
 
 ## 1. Informations générales
@@ -40,4 +41,31 @@
 
 - **Signature / Nom de l'étudiant :** DONFACK Synthia Calorine
 - **Date de validation :** 02/10/2025
+---
+
+
+.
+
+## 📅 Mise à jour du 02 Octobre 2025 : Entropie Croisée Binaire (BCE)
+
+L'étude de la fonction de Perte d'**Entropie Croisée Binaire** (Binary Cross-Entropy ou Log Loss) a été complétée, combinant l'approche symbolique (SymPy) et l'application pratique (NumPy/Matplotlib).
+
+### 🎯 Objectifs Couverts (Exercice 1, BCE)
+
+| Objectif | Réalisé | Détails |
+| :--- | :--- | :--- |
+| **Gradient** | ✅ | [cite_start]Expression analytique du gradient fournie[cite: 5]. |
+| **Convexité** | ✅ | [cite_start]Propriété de stricte convexité démontrée via la Hessienne[cite: 6]. |
+| **Courbes** | ✅ | [cite_start]Représentation de la surface de perte 3D et des courbes de niveau ("ellipses") sur le dataset Iris[cite: 9]. |
+| **Tangente** | ✅ | [cite_start]Équation de la tangente à la courbe de niveau trouvée au point $P(0.8, -0.3)$[cite: 10]. |
+
+### 🔍 Synthèse des Résultats Clés
+* **Gradient ($\partial L / \partial \hat{y}$)** : $\frac{\hat{y} - y}{\hat{y}(1 - \hat{y})}$
+* **Convexité** : **Strictement Convexe**, car la Hessienne ($\frac{\partial^2 L}{\partial \hat{y}^2}$) est strictement positive.
+
+---
+## 🚧 Autres Fonctions de Perte (Planification)
+* Erreur Quadratique Moyenne (MSE)
+* Entropie Croisée Catégorielle
+* Perte de Huber
 
