@@ -14,9 +14,10 @@ Ce dépôt contient une présentation **LaTeX Beamer** sur le **calcul symboliqu
 ## 📂 Arborescence du dépôt
 
 * `Présentation.pdf` → Version PDF compilée de la présentation
-* `TPE_Calcul_Symbolique_&_Sympy.ipynb` → Notebook Jupyter illustrant l’importation de SymPy et les opérations de base (symboles, expressions, dérivées, intégrales, équations, matrices)
+* `Operations_de_base_Sympy.ipynb` → Notebook Jupyter illustrant l’importation de SymPy et les opérations de base (symboles, expressions, dérivées, intégrales, équations, matrices)
 * `doc/` → Dossier contenant les fichiers `.md` de participation et contributions de chaque membre
 * `README.md` → Ce fichier de description du projet
+* `TPE1/` → Dossier contenant la présentation pdf et le notebook du TPE n1
 
 
 ## 📦 Installation de SymPy
