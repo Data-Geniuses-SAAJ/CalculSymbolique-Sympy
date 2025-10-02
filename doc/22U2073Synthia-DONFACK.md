@@ -39,7 +39,7 @@
 
 ## 5. Validation
 
-- **Signature / Nom de l'étudiant :** DONFACK Synthia Calorine
+- ** Nom de l'étudiant :** DONFACK Synthia Calorine
 - **Date de validation :** 02/10/2025
 ---
 
@@ -103,4 +103,10 @@ g_1 \cdot (w_1 - w_1^P) + g_2 \cdot (w_2 - w_2^P) = 0
 $$
 
 Le notebook inclut le calcul exact des valeurs $g_1$ et $g_2$ et l'équation finale sous forme $w_2 = a \cdot w_1 + b$, ainsi que la visualisation graphique de cette tangente.
+
+##  Validation
+
+- ** Nom de l'étudiant :** DONFACK Synthia Calorine
+- **Date de validation :** 02/10/2025
+---
 
